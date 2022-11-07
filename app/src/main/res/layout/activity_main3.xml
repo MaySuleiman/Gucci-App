@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D5A01E"
+        android:onClick="BackMainActivity2"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953"
+        tools:layout_editor_absolutey="100dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="409dp"
+        android:layout_height="649dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:columnCount="2"
+        app:rowCount="2"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="355dp"
+            android:layout_height="132dp"
+            app:layout_columnSpan="2"
+            app:layout_rowSpan="2"
+            app:srcCompat="@drawable/gucci_logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="165dp"
+            android:layout_height="162dp"
+            app:srcCompat="@drawable/gu"
+            android:onClick="GoTOTheFirstProduct"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="202dp"
+            android:layout_height="162dp"
+            app:srcCompat="@drawable/guc"
+            android:onClick="GoTOTheSecondProduct"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="169dp"
+            android:layout_height="162dp"
+            app:srcCompat="@drawable/gucc"
+            android:onClick="GoTOTheThirdProduct"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="202dp"
+            android:layout_height="162dp"
+            app:srcCompat="@drawable/gucci"
+            android:onClick="GoTOTheFourthProduct"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="172dp"
+            android:layout_height="162dp"
+            app:srcCompat="@drawable/guccii"
+            android:onClick="GoTOTheFifthProduct"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="202dp"
+            android:layout_height="162dp"
+            app:srcCompat="@drawable/gucciii"
+            android:onClick="GoTOTheSixthProduct"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
